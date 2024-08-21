@@ -19,10 +19,8 @@ spring:
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: create
+    hikari:
+      maximum-pool-size: 10
 
 ---
 spring:
@@ -35,7 +33,5 @@ spring:
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: none
+    hikari:
+      maximum-pool-size: 10
